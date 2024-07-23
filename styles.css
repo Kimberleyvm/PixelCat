@@ -1,0 +1,63 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Achtergrondkleur voor het hele scherm */
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('img/grasveld.jpg'); /* Verwijs naar je achtergrondafbeelding */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px; /* Breedte van de game-container */
+  height: 400px; /* Hoogte van de game-container */
+  border: 2px solid #333; /* Optionele rand */
+  border-radius: 10px; /* Optionele afgeronde hoeken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optionele schaduw */
+}
+
+.status-container {
+  position: absolute;
+  
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond voor betere leesbaarheid */
+  padding: 5px 10px;
+  border-radius: 5px; /* Optionele afgeronde hoeken */
+}
+
+.pixel-dier {
+  width: 200px; /* Breedte van één frame */
+  height: 200px; /* Hoogte van één frame */
+  background-image: url('img/spritesheetblink2.png'); /* Verwijs naar je standaard sprite sheet */
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white; /* Zorg ervoor dat de status leesbaar is tegen de achtergrond */
+  text-shadow: 2px 2px 4px #000; /* Optionele schaduw om de tekst leesbaar te maken */
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ruimte boven de knoppen */
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
